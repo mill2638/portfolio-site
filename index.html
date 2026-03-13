@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Brian Miller | IT Support Technician</title>
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#portfolio">Projects</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section class="hero-section">
+
+<video autoplay muted loop playsinline id="hero-video">
+<source src="assets/videos/hero-background.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+
+<h1>Brian Miller</h1>
+
+<p>IT Support Technician • Purdue IT Graduate</p>
+
+<a href="#about" class="button">Learn More</a>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section
+id="about"
+class="section reveal"
+style="background-image:url('assets/images/about-background.jpg');"
+>
+
+<div class="section-content">
+
+<h2>About Me</h2>
+
+<p>
+
+I am an IT Support Technician at Premier Truck Rental and a graduate of
+Purdue University with a background in cybersecurity and IT systems.
+
+I enjoy troubleshooting infrastructure issues, working with networking
+technology, and building technical solutions that improve reliability
+and security.
+
+My interests include IT systems, cybersecurity, networking, and creating
+technical tools that solve real-world problems.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECTS -->
+
+<section
+id="portfolio"
+class="section reveal"
+style="background-image:url('assets/images/portfolio-background.jpg');"
+>
+
+<div class="section-content">
+
+<h2>Personal IT Projects</h2>
+
+<div class="portfolio-grid">
+
+<!-- Project 1 -->
+<a href="project1.html" class="portfolio-item">
+<img src="assets/images/project1.jpg" alt="Project 1">
+<div class="overlay">
+<h3>Project 1</h3>
+</div>
+</a>
+
+<!-- Project 2 -->
+<a href="project2.html" class="portfolio-item">
+<img src="assets/images/project2.jpg" alt="Project 2">
+<div class="overlay">
+<h3>Project 2</h3>
+</div>
+</a>
+
+<!-- Project 3 -->
+<a href="project3.html" class="portfolio-item">
+<img src="assets/images/project3.jpg" alt="Project 3">
+<div class="overlay">
+<h3>Project 3</h3>
+</div>
+</a>
+
+<!-- Project 4 -->
+<a href="project4.html" class="portfolio-item">
+<img src="assets/images/project4.jpg" alt="Pi-Hole Project">
+<div class="overlay">
+<h3>Project 4</h3>
+</div>
+</a>
+
+</div> <!-- portfolio-grid -->
+
+</div> <!-- section-content -->
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section reveal">
+
+<div class="section-content">
+
+<h2>Contact</h2>
+
+<p>You can reach me or view my work through the platforms below.</p>
+
+<div class="social-links">
+
+
+<a href="https://discordapp.com/users/363366697983541249" target="_blank">
+<img src="assets/icons/discord.png" alt="Discord">
+</a>
+
+
+<a href="https://www.linkedin.com/in/brian-miller-3934622a8" target="_blank">
+<img src="assets/icons/linkedin.png" alt="LinkedIn">
+</a>
+
+
+<a href="https://www.youtube.com/@galaxyglitch9931/videos" target="_blank">
+<img src="assets/icons/youtube.png" alt="YouTube">
+</a>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- SCROLL REVEAL SCRIPT -->
+
+<script>
+
+function revealSections() {
+
+const reveals = document.querySelectorAll(".reveal");
+
+reveals.forEach((section) => {
+
+const windowHeight = window.innerHeight;
+const elementTop = section.getBoundingClientRect().top;
+
+const revealPoint = 120;
+
+if (elementTop < windowHeight - revealPoint) {
+section.classList.add("active");
+}
+
+});
+
+}
+
+window.addEventListener("scroll", revealSections);
+
+</script>
+
+
+
+<!-- FORCE SMOOTH SCROLL -->
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+anchor.addEventListener('click', function (e) {
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+
+});
+
+});
+
+</script>
+
+
+</body>
+</html>
